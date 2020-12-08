@@ -71,14 +71,16 @@ def scrapeResults(status):
         for i in range(0,100):
             print(z)
 
-            row = driver.find_element_by_id("_ctl0_cphContent_grd1_DXDataRow" + str(z))
-
+     
+        
             # try:
             #     row = driver.find_element_by_id("_ctl0_cphContent_grd1_DXDataRow" + str(z))
             # except:
             #     print("Error")
             #     driver.quit()
             #     return 0
+
+            row = driver.find_element_by_id("_ctl0_cphContent_grd1_DXDataRow" + str(z))
             file.write(row.get_attribute('innerHTML'))
             z = z + 1
         file.close()
