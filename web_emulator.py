@@ -9,9 +9,9 @@ driver = webdriver.Chrome('A:\Dropbox (GaTech)\Programming\CIOS\Driver\chromedri
 wait = WebDriverWait(driver, 10)
 
 def login():
-    email = "sregenbaum3@gatech.edu"
-    username = "sregenbaum3"
-    password = "j01vTR90eLPz"   
+    email = "email"
+    username = "username"
+    password = "password"   
 
     driver.get("https://wwwh.smartevals.com/SchoolList.aspx?from=anonseeresults") # Go to smart Evals
 
